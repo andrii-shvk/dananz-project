@@ -1,4 +1,5 @@
 import Button from "../ui/Button";
+import LogoTitle from "../ui/LogoTitle";
 import { ArrowRight } from "./icons/ArrowRight";
 import PointEllipse from "./icons/PointEllipse";
 import IconsList from "./icons/Stack/IconsList";
@@ -23,7 +24,7 @@ const Footer = () => {
       </div>
       <div className="container m-auto mt-20 flex items-center justify-between">
         <div className="flex w-[480px] flex-col gap-2.5">
-          <h1 className="logoTitle">Dananz</h1>
+          <LogoTitle />
           <p className="text-[36px] font-semibold text-text-title">
             One of the best furniture agency.
           </p>
@@ -43,7 +44,7 @@ const Footer = () => {
               className="h-[37px] w-[400px] border-b-[1px] border-black bg-transparent outline-none"
             />
           </label>
-          <div className="flex flex-col gap-[15px] ml-auto">
+          <div className="ml-auto flex flex-col gap-[15px]">
             <p>Follow Us On</p>
             <IconsList />
           </div>

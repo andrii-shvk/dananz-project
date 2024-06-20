@@ -6,13 +6,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React from "react";
 import Button from "../ui/Button";
+import LogoTitle from "../ui/LogoTitle";
 
 const Header = () => {
   const pathname = usePathname();
 
   return (
     <header className="flex flex-row items-center justify-between pb-28 pt-14">
-      <h1 className="logoTitle">Dananz</h1>
+      <LogoTitle />
       <nav className="flex items-center gap-[75px]">
         {navLinks.map((link) => (
           <Link
