@@ -25,4 +25,7 @@ body {
   .btn {
     @apply w-36 border-[1px] px-8 py-[14px] h-[50px] text-sm font-medium transition-colors;
   }
+  .scrollToTop {
+    @apply rounded-[50%] bg-bgBlue fixed right-[50px] z-[100] cursor-pointer px-[12px] py-[10px] transition-all delay-300;
+  }
 }

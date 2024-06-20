@@ -1,5 +1,6 @@
 import Footer from "@/components/shared/Footer";
 import Header from "@/components/shared/Header";
+import ScrollToTop from "@/components/ui/ScrollToTop";
 import React from "react";
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
@@ -9,7 +10,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
         <Header />
         {children}
       </div>
-        <Footer />
+      <Footer />
+      <ScrollToTop />
     </main>
   );
 };
