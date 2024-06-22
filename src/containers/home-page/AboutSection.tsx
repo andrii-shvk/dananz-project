@@ -1,8 +1,8 @@
-import SectionTitle from "@/components/shared/SectionTitle";
 import AboutMainImg from "@/assets/img/main/AboutSection/AboutMain.jpg";
 import Avatar from "@/assets/img/main/AboutSection/Avatar.jpg";
 import Image from "next/image";
 import Button from "@/components/ui/Button";
+import SectionTitle from "@/components/ui/SectionTitle";
 
 const AboutSection = () => {
   return (
@@ -14,7 +14,7 @@ const AboutSection = () => {
             subtitle="“We're one of the best furniture agency. Prioritizing
                         customers and making purchases easy are the hallmarks of our
                         agency.”"
-            isBorderline={true}
+            borderLeftMargin='left-[67px]'
           />
           <div className="absolute right-[120px] top-[270px] flex h-[90px] w-[275px] gap-5 bg-white py-5 pl-5 pr-12">
             <Image

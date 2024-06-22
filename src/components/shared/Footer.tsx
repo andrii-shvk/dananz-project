@@ -3,7 +3,7 @@
 import { FormEvent, useState } from "react";
 import Button from "../ui/Button";
 import LogoTitle from "../ui/LogoTitle";
-import ContactsInput from "./ContactsInput";
+import ContactsInput from "../ui/ContactsInput";
 import PointEllipse from "./icons/PointEllipse";
 import IconsList from "./icons/Stack/IconsList";
 
@@ -12,7 +12,7 @@ const Footer = () => {
 
   const resetClassForm = (e: FormEvent<HTMLElement>) => {
     const input = document.querySelector("#emailInput") as HTMLInputElement;
-    
+
     if (
       !(e.target as HTMLElement).closest("#emailInput") &&
       input.value.length < 1

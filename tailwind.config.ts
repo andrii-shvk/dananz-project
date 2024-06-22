@@ -22,27 +22,29 @@ const config: Config = {
           xl: "1240px",
         },
         padding: {
-          DEFAULT: '20px',
+          DEFAULT: "20px",
         },
       },
       colors: {
-        bgMain: '#e2e2e2',
+        bgMain: "#e2e2e2",
         text: {
-          primary: '#000',
-          title: '#333333',
-          decription: '#9C9C9C',
-          footerSpan: '#D9D9D9'
+          primary: "#000",
+          title: "#333333",
+          decription: "#9C9C9C",
+          footerSpan: "#D9D9D9",
+          blueSpan: "#2C3878",
         },
-        bgBlue: '#2C3878',
-        btnBlueHover: '#566093',
-        btnBlueActive: '#1C244D',
-        btnWhite: '#e2e2e2',
-        btnWhiteHover: '#2C3878',
-        btnWhiteActive: '#1C244D'
+        bgBlue: "#2C3878",
+        btnBlueHover: "#566093",
+        btnBlueActive: "#1C244D",
+        btnWhite: "#e2e2e2",
+        btnWhiteHover: "#2C3878",
+        btnWhiteActive: "#1C244D",
+        borderCard: "#9C9C9C",
       },
       fontSize: {
-        logo: '32px'
-      }
+        logo: "32px",
+      },
     },
   },
   plugins: [],

@@ -1,11 +1,15 @@
-import Header from "@/components/shared/Header";
+import AchievementSection from "@/containers/services-page/AchievementSection";
+import HeaderSection from "@/containers/services-page/HeaderSection";
+import ProductSection from "@/containers/services-page/ProductSection";
 
 const ServicesPage = () => {
-    return (
-        <section>
-            <p>Main page</p>
-        </section>
-    );
+  return (
+    <>
+      <HeaderSection />
+      <AchievementSection />
+      <ProductSection />
+    </>
+  );
 };
 
 export default ServicesPage;

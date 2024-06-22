@@ -1,5 +1,5 @@
 import ServiceMainImg from "@/assets/img/main/ServiceSection/ServiceMain.jpg";
-import SectionTitle from "@/components/shared/SectionTitle";
+import SectionTitle from "@/components/ui/SectionTitle";
 import { ArrowRight } from "@/components/shared/icons/ArrowRight";
 import { serviceItems } from "@/constants";
 import Image from "next/image";
@@ -11,7 +11,7 @@ const ServiceSection = () => {
         <SectionTitle
           title="SERVICE"
           subtitle="attractive furniture with the best quality."
-          isBorderline={true}
+          borderLeftMargin="left-[76px]"
         />
         <div className="z-10 flex w-[880px] flex-col">
           <div className="mb-[90px] mt-6 w-[470px]">

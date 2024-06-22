@@ -8,7 +8,7 @@ interface AboutCardProps {
 const AboutCard = ({ className }: AboutCardProps) => {
   return (
     <div
-      className={`"block " bg-bgBlue mx-auto h-[525px] w-[252px] px-12 py-10 ${className}`}
+      className={`"block " bg-bgBlue h-[525px] w-[252px] px-12 py-10 ${className}`}
     >
       {aboutProjects.map((el) => (
         <div key={el.title} className="mb-14 flex flex-col">

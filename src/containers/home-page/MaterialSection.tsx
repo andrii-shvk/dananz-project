@@ -1,4 +1,4 @@
-import SectionTitle from "@/components/shared/SectionTitle";
+import SectionTitle from "@/components/ui/SectionTitle";
 import Button from "@/components/ui/Button";
 import MaterialOneImg from "@/assets/img/main/Material/MaterialOne.jpg";
 import MaterialTwoImg from "@/assets/img/main/Material/MaterialTwo.jpg";
@@ -14,8 +14,7 @@ const MaterialSection = () => {
             <SectionTitle
               title="MATERIAL"
               subtitle="choice of materials for quality furniture."
-              isBorderline={true}
-              longLine
+              borderLeftMargin='left-[90px]'
             />
             <p className="grayDescription mb-6 mt-2.5 w-[500px]">
               You can custom the material as desired. And our furniture uses the

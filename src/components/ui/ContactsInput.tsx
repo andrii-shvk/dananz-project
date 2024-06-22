@@ -1,9 +1,9 @@
 "use client";
 
 import { SubmitHandler, useForm } from "react-hook-form";
-import { ArrowRight } from "./icons/ArrowRight";
+import { ArrowRight } from "../shared/icons/ArrowRight";
 import { useState } from "react";
-import { Preloader } from "../ui/Preloader";
+import { Preloader } from "./Preloader";
 import clsx from "clsx";
 
 interface IFormState {
@@ -41,11 +41,14 @@ const ContactsInput = (props: ContactsProps) => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <label className="flex flex-col relative" onClick={() => setInputActive(true)}>
+    <form onSubmit={handleSubmit(onSubmit)} className="realtive">
+      <label
+        className="relative flex flex-col"
+        onClick={() => setInputActive(true)}
+      >
         <span
           className={clsx("absolute text-gray-400", {
-            ["text-bgBlue text-[14px] bottom-10 transition-all"]: inputActive,
+            ["text-text-blueSpan bottom-10 text-[14px]"]: inputActive,
           })}
         >
           Email Address
@@ -57,10 +60,10 @@ const ContactsInput = (props: ContactsProps) => {
           {...register("email")}
           className="h-[37px] w-[400px] border-b-[1px] border-black bg-transparent outline-none"
         />
+        <button type="submit" className="absolute right-0">
+          {isLoading ? <Preloader /> : <ArrowRight />}
+        </button>
       </label>
-      <button type="submit" className="absolute right-0">
-        {isLoading ? <Preloader /> : <ArrowRight />}
-      </button>
     </form>
   );
 };
