@@ -23,9 +23,40 @@ body {
     @apply text-lg text-text-decription;
   }
   .btn {
-    @apply w-36 border-[1px] px-8 py-[14px] h-[50px] text-sm font-medium transition-colors;
+    @apply h-[50px] w-36 border-[1px] px-8 py-[14px] text-sm font-medium transition-colors;
   }
   .scrollToTop {
-    @apply rounded-[50%] bg-bgBlue fixed right-[50px] z-[100] cursor-pointer px-[12px] py-[10px] transition-all delay-300;
+    @apply fixed right-[50px] z-[100] cursor-pointer rounded-[50%] bg-white px-[12px] py-[10px] transition-all delay-300;
+  }
+}
+
+/* Preloader  */
+
+.lds-dual-ring,
+.lds-dual-ring:after {
+  box-sizing: border-box;
+}
+.lds-dual-ring {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 3px solid currentColor;
+  border-color: currentColor transparent currentColor transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }

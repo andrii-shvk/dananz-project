@@ -1,12 +1,28 @@
+"use client";
+
+import { FormEvent, useState } from "react";
 import Button from "../ui/Button";
 import LogoTitle from "../ui/LogoTitle";
-import { ArrowRight } from "./icons/ArrowRight";
+import ContactsInput from "./ContactsInput";
 import PointEllipse from "./icons/PointEllipse";
 import IconsList from "./icons/Stack/IconsList";
 
 const Footer = () => {
+  const [inputActive, setInputActive] = useState<boolean>(false);
+
+  const resetClassForm = (e: FormEvent<HTMLElement>) => {
+    const input = document.querySelector("#emailInput") as HTMLInputElement;
+    
+    if (
+      !(e.target as HTMLElement).closest("#emailInput") &&
+      input.value.length < 1
+    ) {
+      setInputActive(false);
+    }
+  };
+
   return (
-    <section className="pb-[85px]">
+    <section className="pb-[85px]" onClick={(e) => resetClassForm(e)}>
       <div className="bg-bgBlue">
         <div className="container m-auto py-[38px]">
           <div className="flex justify-between">
@@ -14,7 +30,7 @@ const Footer = () => {
               let's discuss making your interior like a dream place!
             </h1>
             <div className="flex w-[430px] flex-col gap-5">
-              <p className="text-text-footerSpan text-lg">
+              <p className="text-lg text-text-footerSpan">
                 Contact us below to work together to build your amazing interior
               </p>
               <Button variant="white">Contact Us</Button>
@@ -34,16 +50,10 @@ const Footer = () => {
             <PointEllipse />
             <h3>Enter your email to get the laterst news</h3>
           </div>
-          <label>
-            <span className="absolute text-gray-400">Email Address</span>
-            <div className="absolute right-[115px]">
-              <ArrowRight />
-            </div>
-            <input
-              type="email"
-              className="h-[37px] w-[400px] border-b-[1px] border-black bg-transparent outline-none"
-            />
-          </label>
+          <ContactsInput
+            inputActive={inputActive}
+            setInputActive={setInputActive}
+          />
           <div className="ml-auto flex flex-col gap-[15px]">
             <p>Follow Us On</p>
             <IconsList />

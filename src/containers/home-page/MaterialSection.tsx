@@ -4,7 +4,6 @@ import MaterialOneImg from "@/assets/img/main/Material/MaterialOne.jpg";
 import MaterialTwoImg from "@/assets/img/main/Material/MaterialTwo.jpg";
 import MaterialThreeIng from "@/assets/img/main/Material/MaterialThree.jpg";
 import Image from "next/image";
-import LogoTitle from "@/components/ui/LogoTitle";
 
 const MaterialSection = () => {
   return (
