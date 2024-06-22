@@ -1,7 +1,15 @@
-import InteriorDesignImg from "@/assets/img/services/InteriorDesign.jpg";
-import ConsultantImg from "@/assets/img/services/Consultant.jpg";
-import Construction from "@/assets/img/services/Construction.jpg";
 import { StaticImageData } from "next/image";
+import InteriorDesignImg from "@/assets/img/services/Achievement/InteriorDesign.jpg";
+import ConsultantImg from "@/assets/img/services/Achievement/Consultant.jpg";
+import Construction from "@/assets/img/services/Achievement/Construction.jpg";
+import ImgOne from "@/assets/img/ourteams/CreativePerson/ImgOne.jpg";
+import ImgTwo from "@/assets/img/ourteams/CreativePerson/ImgTwo.jpg";
+import ImgThree from "@/assets/img/ourteams/CreativePerson/ImgThree.jpg";
+import ImgFour from "@/assets/img/ourteams/CreativePerson/ImgFour.jpg";
+import ImgFive from "@/assets/img/ourteams/CreativePerson/ImgFive.jpg";
+import ImgSix from "@/assets/img/ourteams/CreativePerson/ImgSix.jpg";
+import ImgSeven from "@/assets/img/ourteams/CreativePerson/ImgSeven.jpg";
+import ImgEight from "@/assets/img/ourteams/CreativePerson/ImgEight.jpg";
 
 interface INavLinks {
   title: string;
@@ -125,5 +133,54 @@ export const achievementList: IAchievementList[] = [
     title: "Construction consultant",
     description:
       "Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.",
+  },
+];
+
+interface IPersonsList {
+  Image: string | StaticImageData;
+  name: string;
+  position: string;
+}
+
+export const personsList: IPersonsList[] = [
+  {
+    Image: ImgTwo,
+    name: "John Stinger",
+    position: "CEO",
+  },
+  {
+    Image: ImgTwo,
+    name: "John Stinger",
+    position: "CEO",
+  },
+  {
+    Image: ImgTwo,
+    name: "John Stinger",
+    position: "CEO",
+  },
+  {
+    Image: ImgTwo,
+    name: "John Stinger",
+    position: "CEO",
+  },
+  {
+    Image: ImgTwo,
+    name: "John Stinger",
+    position: "CEO",
+  },
+  {
+    Image: ImgTwo,
+    name: "John Stinger",
+    position: "CEO",
+  },
+  {
+    Image: ImgTwo,
+    name: "John Stinger",
+    position: "CEO",
+  },
+  {
+    Image: ImgTwo,
+    name: "John Stinger",
+    position: "CEO",
   },
 ];

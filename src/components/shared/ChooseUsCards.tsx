@@ -2,7 +2,7 @@ import ServiceChooseImg from "@/assets/img/about/ServiceSection/ServiceChoose.jp
 import { chooseUsItems } from "@/constants";
 import Image from "next/image";
 
-const ChooseUsCard = () => {
+const ChooseUsCards = () => {
   return (
     <div className="flex gap-[18px]">
       {chooseUsItems.map((item) => (
@@ -20,4 +20,4 @@ const ChooseUsCard = () => {
   );
 };
 
-export default ChooseUsCard;
+export default ChooseUsCards;

@@ -27,7 +27,7 @@ const Footer = () => {
         <div className="container m-auto py-[38px]">
           <div className="flex justify-between">
             <h1 className="w-[610px] text-[36px] font-semibold text-white">
-              let's discuss making your interior like a dream place!
+              Let's discuss making your interior like a dream place!
             </h1>
             <div className="flex w-[430px] flex-col gap-5">
               <p className="text-lg text-text-footerSpan">

@@ -1,11 +1,15 @@
-import Header from "@/components/shared/Header";
+import DesignerSection from "@/containers/ourteam-page/DesignerSection";
+import HeaderSection from "@/containers/ourteam-page/HeaderSection";
+import ServiceSection from "@/containers/ourteam-page/ServiceSection";
 
 const OurTeamPage = () => {
-    return (
-        <section>
-            <p>Main page</p>
-        </section>
-    );
+  return (
+    <>
+      <HeaderSection />
+      <DesignerSection />
+      <ServiceSection />
+    </>
+  );
 };
 
 export default OurTeamPage;

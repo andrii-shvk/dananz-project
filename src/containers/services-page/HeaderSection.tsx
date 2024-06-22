@@ -11,7 +11,7 @@ const HeaderSection = () => {
                   that a reader will be distracted by the 
                   readable content of a page when looking at its layout."
       />
-    <Image src={HeaderImg} alt="HeaderImg" className="mt-[57px]"/>
+    <Image src={HeaderImg} alt="HeaderImg" className="mt-[57px]" priority />
     </section>
   );
 };
