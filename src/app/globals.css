@@ -28,6 +28,15 @@ body {
   .scrollToTop {
     @apply fixed right-[50px] z-[100] cursor-pointer rounded-[50%] bg-white px-[12px] py-[10px] outline-none transition-all delay-300;
   }
+  .inputTitle {
+    @apply text-lg font-medium mb-2.5;
+  }
+  .primaryInput {
+    @apply w-[415px] py-[18px] pl-8 outline-none;
+  }
+  .fullWidthInput {
+    @apply w-full py-[18px] pl-8 outline-none;
+  }
 }
 
 /* Preloader  */

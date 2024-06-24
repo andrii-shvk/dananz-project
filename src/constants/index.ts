@@ -184,3 +184,27 @@ export const personsList: IPersonsList[] = [
     position: "CEO",
   },
 ];
+
+interface ILocationList {
+  name: string;
+  subtitle: string;
+}
+
+export const locationList: ILocationList[] = [
+  {
+    name: "Jakarta",
+    subtitle: 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.'
+  },
+  {
+    name: "Surakarta",
+    subtitle: 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.'
+  },
+  {
+    name: "Yogyakarta",
+    subtitle: 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.'
+  },
+  {
+    name: "Bandung",
+    subtitle: 'Customize your interior design into a dream place with the best designers and quality furniture. We try our best to fulfill your expectations.'
+  },
+]

@@ -1,10 +1,14 @@
-import Header from "@/components/shared/Header";
+import ContactsForm from "@/containers/contacts-page/ContactsForm";
+import HeaderSection from "@/containers/contacts-page/HeaderSection";
+import LocationSection from "@/containers/contacts-page/LocationSection";
 
 const ContactsPage = () => {
     return (
-        <section>
-            <p>Main page</p>
-        </section>
+        <>
+            <HeaderSection />
+            <ContactsForm />
+            <LocationSection />
+        </>
     );
 };
 
